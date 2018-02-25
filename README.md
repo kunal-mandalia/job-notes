@@ -61,5 +61,6 @@ type Opportunity {
 	rating: Rating
 	status: Status
 }
+```
 
 ### UI
