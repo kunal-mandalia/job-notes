@@ -28,6 +28,12 @@ As a London Underground commuter, I'd like to read and manage notes for upcoming
 ### Data
 
 ```
+type User {
+	id: ID!
+	email: String!
+	password_hash: String!
+}
+
 type Company {
 	id: ID!
 	name: String!
@@ -55,6 +61,8 @@ enum Status {
 
 type Opportunity {
 	id: ID!
+	title: String
+	user: User
 	company: Company
 	recruiter: Recruiter
 	note: String
